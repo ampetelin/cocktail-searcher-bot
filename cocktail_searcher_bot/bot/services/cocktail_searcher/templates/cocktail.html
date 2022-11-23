@@ -1,0 +1,7 @@
+<a href="{{ cocktail.image_url }}"><b>{{ cocktail.name }}</b></a>
+<i>{{ cocktail.categories|map(attribute='name')|join(' / ') }}</i>
+
+<b>Необходимые ингредиенты:</b>
+{% for composition in cocktail.composition -%}
+    {{ composition.ingredient_name }} - {{ composition.amount }} {{ composition.unit_name }}
+{% endfor %}

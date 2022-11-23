@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  telegram_bot:
+    image: ghcr.io/ampetelin/cocktail-searcher-bot:latest
+    environment:
+      - TELEGRAM_API_TOKEN=${TELEGRAM_API_TOKEN:?error}
+      - COCKTAIL_SEARCHER_URL=${COCKTAIL_SEARCHER_URL:?error}
+      - COCKTAIL_SEARCHER_API_TOKEN=${COCKTAIL_SEARCHER_API_TOKEN:?error}
+      - SENTRY_DSN
+    networks:
+      - backend
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+networks:
+  backend:
+    name: cocktail_searcher_backend
+    external: true

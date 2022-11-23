@@ -1,0 +1,5 @@
+<b>Метод приготовления</b>
+
+{% for cooking_stage in recipe -%}
+    {{ cooking_stage.stage }}. {{ cooking_stage.action }}
+{% endfor %}
