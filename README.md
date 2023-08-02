@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/cocktail-api/image/upload/v1668231315/cocktail-searcher/cocktail-searcher-bot_r0qtmv_k439lq.png" alt="Cocktail Searcher">
+  <img src="https://res.cloudinary.com/ampetelin/image/upload/v1668231315/cocktail-searcher/cocktail-searcher-bot_r0qtmv_k439lq.png" alt="Cocktail Searcher">
 </p>
 
 ---
